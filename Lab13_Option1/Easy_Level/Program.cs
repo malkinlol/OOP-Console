@@ -12,7 +12,9 @@ namespace Easy_Level
 
             //FileInfo_Task();
 
-            DirInfo_Task();
+            //DirInfo_Task();
+
+            FileManagerInfo_Task();
         }
         
         private static void DiskInfo_Task()
@@ -20,8 +22,6 @@ namespace Easy_Level
             MyDiskInfo disk = new MyDiskInfo();
 
             disk.Task_D();
-
-
         }
 
         private static void FileInfo_Task()
@@ -36,6 +36,13 @@ namespace Easy_Level
             MyDirInfo dir = new MyDirInfo();
 
             dir.Task_E();
+        }
+
+        private static void FileManagerInfo_Task()
+        {
+            MyFileManager manager = new MyFileManager();
+
+            manager.Task_D();
         }
     }
 }
