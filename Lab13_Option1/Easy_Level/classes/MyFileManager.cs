@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,7 +8,6 @@ namespace Easy_Level.classes
 {
     public class MyFileManager
     {
-        private const string disk = "C";
         private const string diskPath = @"D:\";
         private const string customDirectory1 = @"\Custom Directory1";
         private const string customDirectory2 = @"\Custom Directory2";
@@ -211,26 +209,7 @@ namespace Easy_Level.classes
 
         private void Task_C()
         {
-            //Сделайте архив из файлов директория XXXFiles. Разархивируйте его в другой директорий.
-        }
-
-        private void CreateArchive()
-        {
-            //// поток для чтения исходного файла
-            //using (FileStream sourceStream = new FileStream(projectPath + customDirectory3, FileMode.OpenOrCreate))
-            //{
-            //    // поток для записи сжатого файла
-            //    using (FileStream targetStream = File.Create(compressedFile))
-            //    {
-            //        // поток архивации
-            //        using (GZipStream compressionStream = new GZipStream(targetStream, CompressionMode.Compress))
-            //        {
-            //            sourceStream.CopyTo(compressionStream); // копируем байты из одного потока в другой
-            //            Console.WriteLine("Сжатие файла {0} завершено. Исходный размер: {1}  сжатый размер: {2}.",
-            //                sourceFile, sourceStream.Length.ToString(), targetStream.Length.ToString());
-            //        }
-            //    }
-            //}
+            //Compress | Decompres are not implementation 
         }
 
         public void Task_D()
